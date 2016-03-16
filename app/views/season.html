@@ -1,6 +1,18 @@
 <p>This is the season view.</p>{{helloWorld}}
 <ul>
 <li ng-repeat="game in games">
-{{game.homeTeam.name}} vs. {{game.awayTeam.name}} 
+<div class="row">
+<div class="column col-md-5">
+<div class="row">
+<div class="column col-xs-5">
+{{game.homeTeam.name}} </div>
+<div class="column col-xs-2">vs.</div>
+<div class="column col-xs-5">
+
+{{game.awayTeam.name}} 
+</div>
+</div>
+</div>
+</div>
 </li>
 </ul>

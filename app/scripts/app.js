@@ -34,6 +34,11 @@ angular
         controller: 'SeasonCtrl',
         controllerAs: 'season'
       })
+      .when('/community/:communityId', {
+        templateUrl: 'views/community.html',
+        controller: 'CommunityCtrl',
+        controllerAs: 'community'
+      })
       .otherwise({
         redirectTo: '/'
       });
